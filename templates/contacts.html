@@ -2,9 +2,112 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Контакты</title>
+    <link rel="icon" href="../static/icons/favicon.ico" type="image/x-icon">
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../static/bootstrap-icons-1.13.1/bootstrap-icons.css">
 </head>
-<body>
+<body class="fw-bold">
+<div class="container-fluid">
+    <div class="row min-vh-100">
+        <div class="col-md-2 bg-dark text-white d-flex flex-column  position-fixed h-100 top-0 start-0">
+            <nav class="navbar-brand bg-dark text-white p-3 fs-1 ">
+                <img src="../static/icons/bootstrap-logo-white.svg" alt="Logo" width="60" height="50">
+                Меню
+            </nav>
 
+            <nav class="nav nav-pills flex-column border-top border-secondary p-3 ">
+
+                <a class="flex-sm-fill  nav-link active" aria-current="page" aria-label="SkyEng" href="../index.html"><i
+                        class="bi bi-house-door me-2"></i> Главная </a>
+                <a class="flex-sm-fill  nav-link text-bg-dark" href="category.html"><i
+                        class="bi bi-speedometer2 me-2"></i>Категории</a>
+                <a class="flex-sm-fill  nav-link text-bg-dark" href="catalog.html"><i class="bi bi-table me-2"></i>Заказы</a>
+                <a class="flex-sm-fill  nav-link text-bg-dark" href="contacts.html"><i
+                        class="bi bi-person-circle me-2 "></i>Контакты</a>
+            </nav>
+
+            <div class="d-flex flex-column mt-auto" style="height: 100;">
+                <nav class="dropup border-top border-secondary p-2 gap-2 ">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item dropup">
+                            <a class="btn btn-dark dropdown-toggle navbar-dark bg-dark fw-bold p-3"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <img src="../static/img/1v0sfAHnQ9VzQ-T64dvCrPjTozTkMoym3UgmN4TToyfYR50VTGffEZXbGSvbFjtajcSkrTHUxi3Os1BJ6KdiKgza.jpg"
+                                     alt="picture" class="rounded-circle" width="50" height="50">
+                                Пользователь
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark">
+                                <li><a class="dropdown-item" href="#">Профиль</a></li>
+                                <li><a class="dropdown-item" href="#">Выход</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="col-md-10  fw-bold offset-md-2">
+            <p class="display-4 text-center fw-medium p-5 fs-0 fw-semibold">Контакты</p>
+
+
+            <div class="row justify-content-start">
+
+                <div class="col-md-1"></div>
+
+
+                <div class="col-md-4">
+                    <div class="card border-1 shadow-sm">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3 ">
+                                    <label for="name" class="form-label">Имя</label>
+                                    <input type="text" class="form-control" id="name" name="name">
+                                </div>
+                                <div class="col-auto">
+                                    <label for="email" class="form-label">Почта</label>
+                                    <div class="input-group">
+                                        <div class="input-group-text">@</div>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                               placeholder="Username">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Сообщение</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+
+                <div class="col-md-4">
+                    <div class="card border-0">
+                        <div class="card-body fw-bold">
+                            <p class="card-title fs-3 mb-2">Наши контакты</p>
+                            <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                                qui officia deserunt mollit anim id est laborum.</p>
+                            <p class="card-text">While these feedback styles cannot be styled with CSS,
+                                you can still customize the feedback text through JavaScript.</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../static/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
